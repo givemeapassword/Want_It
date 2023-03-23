@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     val viewPager: ViewPager2 = findViewById(R.id.view_pager)
 
     val fragments: ArrayList<Fragment> = arrayListOf(
-        Page1Fragment(),
         Page2Fragment(),
         Page3Fragment()
     )
