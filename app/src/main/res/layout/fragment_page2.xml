@@ -7,28 +7,17 @@
     android:background="@color/bg1"
     tools:context=".MainActivity">
 
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"></androidx.viewpager2.widget.ViewPager2>
-
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/icons12"
-        android:gravity="bottom"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button4"
@@ -63,6 +52,18 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/icons12"
+        android:gravity="bottom"
+        android:onClick="ClickSetting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
