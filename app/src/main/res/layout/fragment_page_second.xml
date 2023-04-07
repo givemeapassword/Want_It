@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+    android:background="#101012"
     tools:context=".MainActivity">
 
     <com.google.android.material.tabs.TabLayout
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tabIndicatorColor="@color/text5"
         app:tabIndicatorHeight="4dp" />
-
+        <!--Todo реализовать поисковую систему-->
     <!--SearchView
         android:id="@+id/searchView"
         android:layout_width="403dp"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="@string/text_right"
-        android:textColor="@color/text"
+        android:textColor="@color/text1"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -54,7 +54,6 @@
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" >
-        />
     </GridView>
 
 

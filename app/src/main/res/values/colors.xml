@@ -10,9 +10,9 @@
 
 
     <color name="bg">#020f1b</color>
-    <color name="bg_toolbar">#051829</color>
-    <color name="text">#ffffff</color>
-    <color name="text1">#efebe8</color>
+    <color name="bg_2page">#051829</color>
+    <color name="text1">#ffffff</color>
+    <color name="tex">#efebe8</color>
     <color name="text3">#828282</color>
     <color name="text5">#212f30</color>
     <color name="button">#0358cb</color>

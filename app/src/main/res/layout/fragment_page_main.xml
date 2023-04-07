@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
 
-    <!--androidx.viewpager2.widget.ViewPager2
+    <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
-    </androidx.viewpager2.widget.ViewPager2-->
+    </androidx.viewpager2.widget.ViewPager2>
 
     <Button
         android:id="@+id/button3"
@@ -28,10 +28,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/icons12"
+        android:backgroundTint="@color/text1"
         android:gravity="bottom"
         android:onClick="clickSetting"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -39,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:text="@string/main_text"
-        android:textColor="@color/text"
+        android:textColor="@color/text1"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -52,6 +54,7 @@
         android:layout_height="165sp"
         android:layout_marginTop="76dp"
         android:background="@drawable/icons8"
+        android:backgroundTint="@color/text1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,15 +66,15 @@
         android:layout_height="66dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/bg_toolbar"
+        android:backgroundTint="@color/bg_2page"
         android:clickable="true"
         android:tint="#FFFFFF"
-        app:backgroundTint="@color/bg_toolbar"
+        app:backgroundTint="@color/bg_2page"
         app:backgroundTintMode="src_over"
         app:fabCustomSize="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="@color/text"
+        app:rippleColor="@color/text1"
         app:srcCompat="@drawable/icons82" />
 
 

@@ -1,14 +1,14 @@
 package com.example.wantit
 
+import android.app.Application
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import android.widget.GridView
 
 class PageSecondFragment : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -18,4 +18,6 @@ class PageSecondFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_page_second, container, false)
 
     }
+
+
 }

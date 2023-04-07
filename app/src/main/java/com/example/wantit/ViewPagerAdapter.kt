@@ -13,4 +13,5 @@ class ViewPagerAdapter(val items: ArrayList<Fragment>,activity: AppCompatActivit
         return items[position]
     }
 
+
 }

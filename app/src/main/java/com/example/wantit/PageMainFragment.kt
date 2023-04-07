@@ -17,6 +17,10 @@ class PageMainFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_page_main, container, false)
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
 
 
 }
