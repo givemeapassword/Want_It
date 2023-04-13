@@ -55,6 +55,7 @@
         android:layout_marginTop="76dp"
         android:background="@drawable/icons8"
         android:backgroundTint="@color/text1"
+        android:onClick="camActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
