@@ -6,6 +6,8 @@ import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.GridView
+import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
 
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +18,12 @@ import androidx.viewpager2.widget.ViewPager2
 
 class MainActivity : AppCompatActivity() {
     private var view: View? = null
+
+    private lateinit var iva1: ImageView
+    private lateinit var iva2: ImageView
+    private lateinit var iva3: ImageView
+
+
     private var gridView: GridView? = null
     private var arrayList: ArrayList<GridItem>? = null
     private var gridAdapter: GridAdapter? = null
@@ -27,10 +35,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         get_permission()
 
         //viewPager
         val viewPager: ViewPager2 = findViewById(R.id.view_pager)
+
 
         val fragments: ArrayList<Fragment> = arrayListOf(
             PageMainFragment(),
@@ -38,6 +49,7 @@ class MainActivity : AppCompatActivity() {
         )
         val adapter = ViewPagerAdapter(fragments, this)
         viewPager.adapter = adapter
+
 
 
 
@@ -58,7 +70,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onPageSelected(position: Int) {
-
                 super.onPageSelected(position)
             }
 
@@ -68,6 +79,9 @@ class MainActivity : AppCompatActivity() {
 
         })
         }
+
+
+
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onRequestPermissionsResult(
@@ -88,6 +102,8 @@ class MainActivity : AppCompatActivity() {
             requestPermissions(arrayOf(android.Manifest.permission.CAMERA), 101)
         }
     }
+
+
 
     //переход на настройки
     fun clickSetting(view: View){
