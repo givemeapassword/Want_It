@@ -11,7 +11,7 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="411dp"
-        android:layout_height="0dp"
+        android:layout_height="55dp"
         android:background="@color/text5"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tabIndicatorColor="@color/text5"
         app:tabIndicatorHeight="4dp" />
-        <!--Todo реализовать поисковую систему-->
+
+
     <!--SearchView
         android:id="@+id/searchView"
         android:layout_width="403dp"
@@ -46,63 +47,69 @@
 
     <GridView
         android:id="@+id/gridview"
-        android:layout_width="392dp"
-        android:layout_height="499dp"
+        android:layout_width="390dp"
+        android:layout_height="550dp"
         android:numColumns="3"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" >
-    </GridView>
+        app:layout_constraintTop_toBottomOf="@+id/textView3"></GridView>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="10dp">
+        android:orientation="horizontal"
+        android:layout_marginTop="28dp"
+        tools:layout_editor_absoluteY="10dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="15dp"
             android:layout_height="15dp"
-            app:cardElevation="0dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:id="@+id/iva1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:src="@color/teal_700">
 
             </ImageView>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="15dp"
             android:layout_height="15dp"
-            app:cardElevation="0dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:id="@+id/iva2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:src="@color/teal_700">
 
             </ImageView>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="15dp"
             android:layout_height="15dp"
-            app:cardElevation="0dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
             <ImageView
+                android:id="@+id/iva3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/iva3"
                 android:src="@color/teal_700">
 
             </ImageView>

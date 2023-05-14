@@ -5,9 +5,8 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN
 import android.widget.GridView
-import android.widget.ImageView
-import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
 
 import androidx.appcompat.app.AppCompatActivity
@@ -17,12 +16,6 @@ import androidx.viewpager2.widget.ViewPager2
 
 
 class MainActivity : AppCompatActivity() {
-    private var view: View? = null
-
-    private lateinit var iva1: ImageView
-    private lateinit var iva2: ImageView
-    private lateinit var iva3: ImageView
-
 
     private var gridView: GridView? = null
     private var arrayList: ArrayList<GridItem>? = null
@@ -35,6 +28,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        window.setFlags(FLAG_FULLSCREEN, FLAG_FULLSCREEN)
 
 
         get_permission()
@@ -114,7 +109,8 @@ class MainActivity : AppCompatActivity() {
     }
     private fun setDataList(): ArrayList<GridItem> {
         val arrayList: ArrayList<GridItem> = ArrayList()
-        //todo реализовать базу данных со списком фото
+
+
         arrayList.add(GridItem(R.drawable.icons8, "fffff"))
         arrayList.add(GridItem(R.drawable.icons8, "fffff"))
         arrayList.add(GridItem(R.drawable.icons8, "fffff"))

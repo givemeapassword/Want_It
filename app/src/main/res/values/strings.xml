@@ -1,10 +1,10 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Want It</string>
     <string name="main_text">Tap to Find</string>
     <string name="text_right">Discovery your favorite</string>
     <string name="settings">Настройки</string>
     <string name="WantIt">WantIt</string>
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_settings" tools:keep="@string/title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -20,4 +20,5 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="Theme">Theme</string>
 </resources>

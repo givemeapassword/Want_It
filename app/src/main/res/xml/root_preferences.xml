@@ -12,6 +12,11 @@
             app:key="reply"
             app:title="@string/reply_title"
             app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:key="theme"
+            app:title="@string/Theme"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"/>
 
     </PreferenceCategory>
 

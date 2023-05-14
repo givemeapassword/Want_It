@@ -25,7 +25,7 @@ import org.tensorflow.lite.support.image.ops.ResizeOp
 class CameraPageActivity : AppCompatActivity() {
 
     lateinit var labels:List<String>
-    var colors = listOf<Int>(
+    var colors = listOf(
         Color.BLUE, Color.GREEN, Color.RED, Color.CYAN, Color.GRAY, Color.BLACK,
         Color.DKGRAY, Color.MAGENTA, Color.YELLOW, Color.RED)
     val paint = Paint()
@@ -80,7 +80,7 @@ class CameraPageActivity : AppCompatActivity() {
                 val scores = outputs.scoresAsTensorBuffer.floatArray
                 val numberOfDetections = outputs.numberOfDetectionsAsTensorBuffer.floatArray
 
-                var mutable = bitmap.copy(Bitmap.Config.ARGB_8888,true)
+                val mutable = bitmap.copy(Bitmap.Config.ARGB_8888,true)
                 val canvas = Canvas(mutable)
 
                 val h = mutable.height
@@ -126,10 +126,10 @@ class CameraPageActivity : AppCompatActivity() {
             override fun onOpened(p0: CameraDevice) {
                 cameraDevice = p0
 
-                var surfaceTexture = textureView.surfaceTexture
-                var surface = Surface(surfaceTexture)
+                val surfaceTexture = textureView.surfaceTexture //три переменные изменил на var
+                val surface = Surface(surfaceTexture)
 
-                var captureRequest = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW)
+                val captureRequest = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW)
                 captureRequest.addTarget(surface)
 
                 cameraDevice.createCaptureSession(listOf(surface),object: CameraCaptureSession.StateCallback(){
